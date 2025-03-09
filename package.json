@@ -1,0 +1,24 @@
+{
+  "name": "checkout",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy",
+    "format": "prettier --write 'extensions/checkout-ui/src/*.jsx'"
+  },
+  "dependencies": {
+    "prettier": "^3.5.3"
+  },
+  "trustedDependencies": [
+    "@shopify/plugin-cloudflare"
+  ],
+  "private": true,
+  "workspaces": [
+    "extensions/*"
+  ]
+}
